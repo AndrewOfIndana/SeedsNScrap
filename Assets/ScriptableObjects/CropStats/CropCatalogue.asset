@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea4d108543c63e4c8807258a8112760, type: 3}
+  m_Name: CropCatalogue
+  m_EditorClassIdentifier: 
+  cropStatsCatalogue:
+  - {fileID: 11400000, guid: 149a98f5372264b4e8966d3af0e1d857, type: 2}
+  - {fileID: 11400000, guid: 9c27816d46429ff42bc6d3a8c557f9cc, type: 2}
+  - {fileID: 11400000, guid: b4baf8aab915ae549b49528d0446fab6, type: 2}
+  - {fileID: 11400000, guid: 8c9f23aeb9a560745808fed71e94dcae, type: 2}
+  - {fileID: 11400000, guid: e159519c7e620424a94aba079819b7f9, type: 2}
+  - {fileID: 11400000, guid: ad78314b9cb6b434781adccda7deea09, type: 2}
+  - {fileID: 11400000, guid: b3f5a36fc6968d74881b5c869666a708, type: 2}
+  - {fileID: 11400000, guid: ac86c02e9749a1c4e912fc24edc2eb1f, type: 2}
+  - {fileID: 11400000, guid: cb95cab1d48535d4fa107efa2dc86901, type: 2}
+  - {fileID: 11400000, guid: 4a7fe0baf25417f4bb198666e528c9f2, type: 2}
