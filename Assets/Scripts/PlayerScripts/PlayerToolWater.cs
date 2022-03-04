@@ -15,7 +15,7 @@ public class PlayerToolWater : MonoBehaviour
         waterCollider.SetActive(false);
     }
 
-    void FixedUpdate()
+    void Update()
     {   
         if (waterCapacity > 0)
         {

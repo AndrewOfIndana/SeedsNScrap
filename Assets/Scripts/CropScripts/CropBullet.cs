@@ -20,7 +20,7 @@ public class CropBullet : MonoBehaviour
         thisAttack = _attack;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 dir;
         float distanceThisFrame = speed * Time.deltaTime;

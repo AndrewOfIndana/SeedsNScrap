@@ -27,7 +27,7 @@ public class BugController : MonoBehaviour
         this.bugPrefabs[chosenBug].SetActive(true);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * bugStats[randomBug].bugSpeed * Time.deltaTime, Space.World);

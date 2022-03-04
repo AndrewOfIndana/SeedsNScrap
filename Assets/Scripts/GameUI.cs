@@ -8,16 +8,16 @@ public class GameUI : MonoBehaviour
 {
     public static bool isGamePaused = false;
     private bool isMarketOpen = false;
-    private Camera playerCamera;
+    private PlayerMouseLook playerCamera;
     public GameObject pauseMenuUI;
     public GameObject marketMenuUI;
 
     void Awake()
     {
-        playerCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        playerCamera = GameObject.FindWithTag("MainCamera").GetComponent<PlayerMouseLook>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKeyDown("escape"))
         {
@@ -51,7 +51,7 @@ public class GameUI : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
-        playerCamera.SendMessage("CameraResume");
+        playerCamera.CameraResume();
     }
 
     void Pause()
@@ -59,7 +59,7 @@ public class GameUI : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
-        playerCamera.SendMessage("CameraPause");
+        playerCamera.CameraPause();
     }
 
     public void Retry()
@@ -86,7 +86,7 @@ public class GameUI : MonoBehaviour
         marketMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isMarketOpen = false;
-        playerCamera.SendMessage("CameraResume");
+        playerCamera.CameraResume();
     }
 
     public void MarketOpen() 
@@ -94,7 +94,7 @@ public class GameUI : MonoBehaviour
         marketMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isMarketOpen = true;
-        playerCamera.SendMessage("CameraPause");
+        playerCamera.CameraPause();
     }
 
     public void DefaultButton() 

@@ -21,7 +21,7 @@ public class PlayerMouseLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -81,14 +81,14 @@ public class PlayerMouseLook : MonoBehaviour
         }
     }
 
-    void CameraPause()
+    public void CameraPause()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         isCameraOn = false;
     }
     
-    void CameraResume()
+    public void CameraResume()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

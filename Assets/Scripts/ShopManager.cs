@@ -37,7 +37,7 @@ public class ShopManager : MonoBehaviour
         }
         else
         {
-            gManager.SendMessage("LoseMoney", cost);
+            gManager.LoseMoney(cost);
             GameManagerUIMoneyUpdate();
             GameObject droppedItemGameObject = (GameObject)Instantiate(purchasedItem, dropSite.position, dropSite.rotation);
             ItemController droppedItem = droppedItemGameObject.GetComponent<ItemController>();

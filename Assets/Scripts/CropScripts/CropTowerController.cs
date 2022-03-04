@@ -29,7 +29,7 @@ public class CropTowerController : MonoBehaviour
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
-    void FixedUpdate() 
+    void Update() 
     {
         if(targetDetected == null)
         {

@@ -15,7 +15,7 @@ public class PlayerToolSell : MonoBehaviour
         digCollider.SetActive(false);
     }
 
-    void FixedUpdate()
+    void Update()
     {        
         if(Input.GetMouseButton(0))
         {

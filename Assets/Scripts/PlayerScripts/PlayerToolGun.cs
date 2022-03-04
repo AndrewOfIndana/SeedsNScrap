@@ -15,7 +15,7 @@ public class PlayerToolGun : MonoBehaviour
     public GameObject kboom;
 
 
-    void FixedUpdate()
+    void Update()
     {        
         if(Input.GetButtonDown("Fire1")  && canShoot && Time.time > NextFire) 
         {

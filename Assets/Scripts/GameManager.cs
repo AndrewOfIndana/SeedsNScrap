@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         UIupdate(); //Changes UI
     }
     
-    void FixedUpdate() //Every frame, within time scale
+    void Update() //Every frame, within time scale
     {
         if(state == SpawnState.WAITING)
         {
